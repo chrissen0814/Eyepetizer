@@ -28,6 +28,7 @@ class HomeAdapter(context: Context, list : MutableList<HomeBean.IssueListBean.It
     var list : MutableList<HomeBean.IssueListBean.ItemListBean>? = null
     var inflater : LayoutInflater? = null
 
+    //初始化，在实例初始化期间，初始化块按照它们出现在类体中的顺序执行，与属性初始化器交织在一起：
     init {
         this.context = context
         this.list = list

@@ -1,7 +1,7 @@
 package com.chrissen.eyepetizer.mvp.model.bean
 
 /**
- *  Function:
+ *  Function:数据类(只保存数据的类) 关键字： data
  *  <br/>
  *  Describe:
  *  <br/>

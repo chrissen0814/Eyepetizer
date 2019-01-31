@@ -5,7 +5,8 @@ import android.net.ConnectivityManager
 import android.net.NetworkInfo
 
 /**
- *  Function:
+ *  Function: object + name 对象声明， 对象声明的初始化过程是线程安全的。
+ *  使用： NetworkUtils.isNetConnected(context)
  *  <br/>
  *  Describe:
  *  <br/>

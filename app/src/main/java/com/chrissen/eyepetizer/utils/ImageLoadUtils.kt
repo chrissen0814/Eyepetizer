@@ -8,7 +8,8 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.chrissen.eyepetizer.R
 
 /**
- *  Function:
+ *  Function:companion 伴侣，同伙，伙伴的意思
+ *  companion object伴生对象， 伴生对象的成员可通过只使用类名作为限定符来调用 ： ImageLoadUtils.display()
  *  <br/>
  *  Describe:
  *  <br/>
