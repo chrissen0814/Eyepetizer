@@ -1,5 +1,6 @@
 package com.chrissen.eyepetizer.network
 
+import com.chrissen.eyepetizer.mvp.model.bean.FindBean
 import com.chrissen.eyepetizer.mvp.model.bean.HomeBean
 import io.reactivex.Observable
 import retrofit2.http.GET
@@ -33,5 +34,11 @@ interface ApiService {
      */
     @GET("v2/feed")
     fun getHomeMoreData(@Query("date") date: String, @Query("num") num : String) : Observable<HomeBean>
+
+    /**
+     * 获取发现数据
+     */
+    @GET("v2/categories?udid=26868b32e808498db32fd51fb422d00175e179df&vc=83")
+    fun getFindData() : Observable<MutableList<FindBean>>
 
 }
