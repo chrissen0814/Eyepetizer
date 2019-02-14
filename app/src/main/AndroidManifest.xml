@@ -25,6 +25,12 @@
         </activity>
         <activity android:name=".ui.VideoDetailActivity">
         </activity>
+        <activity android:name=".ui.AdviceActivity">
+        </activity>
+        <activity android:name=".ui.WatchActivity">
+        </activity>
+        <activity android:name=".ui.CacheActivity">
+        </activity>
     </application>
 
 </manifest>

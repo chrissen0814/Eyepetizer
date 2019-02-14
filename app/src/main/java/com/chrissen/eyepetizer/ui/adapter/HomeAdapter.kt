@@ -3,6 +3,7 @@ package com.chrissen.eyepetizer.ui.adapter
 import android.content.Context
 import android.content.Intent
 import android.graphics.Typeface
+import android.os.Parcelable
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -103,7 +104,7 @@ class HomeAdapter(context: Context, list : MutableList<HomeBean.IssueListBean.It
                     SPUtils.getInstance(context!!, "beans").put(playUrl!!, playUrl)
                     ObjectSaveUtils.saveObject(context!!, "bean$count", videoBean)
                 }
-                intent.putExtra("data", videoBean)
+                intent.putExtra("data", videoBean as Parcelable)
                 context?.let { context -> context.startActivity(intent) }
             }
         })

@@ -2,6 +2,7 @@ package com.chrissen.eyepetizer.mvp.model.bean
 
 import android.os.Parcel
 import android.os.Parcelable
+import java.io.Serializable
 
 /**
  *  Function:
@@ -16,7 +17,7 @@ import android.os.Parcelable
 data class VideoBean(var feed: String?, var title: String?, var description: String?,
                      var duration: Long?, var playUrl: String?, var category: String?,
                      var blurred: String?, var collect: Int?, var share: Int?, var reply: Int?,
-                     var time: Long): Parcelable {
+                     var time: Long): Parcelable,Serializable {
 
     companion object {
         @JvmField val CREATOR: Parcelable.Creator<VideoBean> = object : Parcelable.Creator<VideoBean> {
