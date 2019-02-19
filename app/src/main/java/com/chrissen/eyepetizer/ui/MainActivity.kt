@@ -7,11 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
 import com.chrissen.eyepetizer.R
-import com.chrissen.eyepetizer.search.SearchFragment
-import com.chrissen.eyepetizer.ui.fragment.FindFragment
-import com.chrissen.eyepetizer.ui.fragment.HomeFragment
-import com.chrissen.eyepetizer.ui.fragment.HotFragment
-import com.chrissen.eyepetizer.ui.fragment.MineFragment
+import com.chrissen.eyepetizer.ui.fragment.*
 import com.gyf.barlibrary.ImmersionBar
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -30,11 +26,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        ImmersionBar.with(this).transparentBar().barAlpha(0.3f).fitsSystemWindows(true).init()
-        val window = window
-        val params = window.attributes
-        params.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-        window.attributes = params
+        //注意设置的transparentStatusBar()【状态栏】，transparentBar 【状态栏和底部导航栏】
+        ImmersionBar.with(this).transparentStatusBar().barAlpha(0.3f).fitsSystemWindows(true).init()
         setRadioButton()
         initToolbar()
         initFragment(savedInstanceState)

@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".ui.CacheActivity">
         </activity>
+        <activity android:name=".ui.ResultActivity">
+        </activity>
     </application>
 
 </manifest>
